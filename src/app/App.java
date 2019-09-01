@@ -9,8 +9,8 @@ public class App {
 
     double[] arr1 = {2.5, 3.5, 5.5};
     double sum = 0.0;
-    for (int i = 0; i < arr1.length; i++) {
-      sum += arr1[i];
+    for (double i : arr1) {
+      sum += i;
     }
     System.out.println(sum);
 
