@@ -7,12 +7,24 @@ public class App {
     double result;
     char opCode = 'd';
 
-    double[] arr1 = {2.5, 3.5, 5.5};
-    double sum = 0.0;
-    for (double i : arr1) {
-      sum += i;
+    switch (opCode) {
+      case 'a':
+        System.out.println("hello!");
+        System.out.println("hmm!");
+      case 'd':
+        System.out.println("oi!");
+        opCode = 'e';
+        break;
+      case 'e':
+        System.out.println("lol this is not right");
     }
-    System.out.println(sum);
+
+    // double[] arr1 = {2.5, 3.5, 5.5};
+    // double sum = 0.0;
+    // for (double i : arr1) {
+    //   sum += i;
+    // }
+    // System.out.println(sum);
 
     // if (opCode == 'a') {
     //   result = val1 + val2;
