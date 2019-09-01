@@ -2,10 +2,10 @@ package app;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    double val1;
-    double val2;
+    double val1 = 100.0;
+    double val2 = 50.0;
     double result;
-    char opCode;
+    char opCode = 'a';
 
     if (opCode == 'a') {
       result = val1 + val2;
