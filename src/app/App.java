@@ -2,16 +2,23 @@ package app;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    String str1 = "haha";
-    String str2 = "haha";
+    double val1;
+    double val2;
+    double result;
+    char opCode;
 
-    System.out.println(str1.equals(str2));
+    if (opCode == 'a') {
+      result = val1 + val2;
+    } else if (opCode == 's') {
+      result = val1 - val2;
+    } else if (opCode == 'm') {
+      result = val1 * val2;
+    } else if (opCode == 'd') {
+      result = val1 / val2;
+    } else {
+      throw new Exception("opCode not defined!");
+    }
 
-    // double val1;
-    // double val2;
-    // double result;
-    // char opCode;
-
-    // if
+    System.out.println(result);
   }
 }
