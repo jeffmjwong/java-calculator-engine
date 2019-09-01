@@ -16,7 +16,7 @@ public class App {
     } else if (opCode == 'd') {
       result = val1 / val2;
     } else {
-      throw new Exception("opCode not defined!");
+      result = 0.0;
     }
 
     System.out.println(result);
