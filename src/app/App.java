@@ -2,43 +2,28 @@ package app;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    double val1 = 100.0;
-    double val2 = 50.0;
-    double result;
-    char opCode = 'd';
+    double[] leftVals = { 100.0, 25.0, 225.0, 11.0 };
+    double[] rightVals = { 50.0, 92.0, 17.0, 3.0 };
+    char[] opCodes = { 'd', 'a', 's', 'm' };
+    double[] results = new double[opCodes.length];
 
-    switch (opCode) {
-      case 'a':
-        System.out.println("hello!");
-        System.out.println("hmm!");
-      case 'd':
-        System.out.println("oi!");
-        opCode = 'e';
-        break;
-      case 'e':
-        System.out.println("lol this is not right");
+    for (int i = 0; i < opCodes.length; i++) {
+      if (opCodes[i] == 'a') {
+        results[i] = leftVals[i] + rightVals[i];
+      } else if (opCodes[i] == 's') {
+        results[i] = leftVals[i] - rightVals[i];
+      } else if (opCodes[i] == 'm') {
+        results[i] = leftVals[i] * rightVals[i];
+      } else if (opCodes[i] == 'd') {
+        results[i] = rightVals[i] == 0.0 ? 0.0 : leftVals[i] / rightVals[i];
+      } else {
+        System.out.println("Error - invalid opCode!");
+        results[i] = 0.0;
+      }
     }
 
-    // double[] arr1 = {2.5, 3.5, 5.5};
-    // double sum = 0.0;
-    // for (double i : arr1) {
-    //   sum += i;
-    // }
-    // System.out.println(sum);
-
-    // if (opCode == 'a') {
-    //   result = val1 + val2;
-    // } else if (opCode == 's') {
-    //   result = val1 - val2;
-    // } else if (opCode == 'm') {
-    //   result = val1 * val2;
-    // } else if (opCode == 'd') {
-    //   result = val2 == 0.0 ? 0.0 : val1 / val2;
-    // } else {
-    //   System.out.println("Error - invalid opCode!");
-    //   result = 0.0;
-    // }
-
-    // System.out.println(result);
+    for (double i : results) {
+      System.out.println(i);
+    }
   }
 }
