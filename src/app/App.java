@@ -24,7 +24,6 @@ public class App {
         default:
           System.out.println("Error - invalid opCode!");
           results[i] = 0.0;
-          break;
       }
     }
 
