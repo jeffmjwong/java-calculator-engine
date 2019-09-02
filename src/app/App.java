@@ -2,9 +2,9 @@ package app;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    double[] leftVals = { 100.0, 25.0, 225.0, 11.0 };
-    double[] rightVals = { 50.0, 92.0, 17.0, 3.0 };
-    char[] opCodes = { 'd', 'a', 's', 'm' };
+    double[] leftVals = { 100.0, 25.0, 225.0, 11.0, 16.0 };
+    double[] rightVals = { 50.0, 92.0, 17.0, 3.0, 9.0 };
+    char[] opCodes = { 'd', 'a', 's', 'm', 'l' };
     double[] results = new double[opCodes.length];
 
     for (int i = 0; i < opCodes.length; i++) {
