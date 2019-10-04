@@ -22,6 +22,7 @@ public class App {
     MathEquation equationOverload = new MathEquation('d');
     equationOverload.execute(36, 8);
 
+    System.out.print("result = ");
     System.out.println(equationOverload.getResult());
   }
 
