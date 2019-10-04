@@ -20,7 +20,7 @@ public class App {
     System.out.println();
 
     MathEquation equationOverload = new MathEquation('d');
-    equationOverload.execute(36.0d, 4.0d);
+    equationOverload.execute(36, 8);
 
     System.out.println(equationOverload.getResult());
   }
