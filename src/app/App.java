@@ -14,6 +14,15 @@ public class App {
       System.out.print("result = ");
       System.out.println(equation.getResult());
     }
+
+    System.out.println();
+    System.out.println("Using overloads");
+    System.out.println();
+
+    MathEquation equationOverload = new MathEquation('d');
+    equationOverload.execute(36.0d, 4.0d);
+
+    System.out.println(equationOverload.getResult());
   }
 
   public static MathEquation create(double leftVal, double rightVal, char opCode) {
