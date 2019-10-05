@@ -4,6 +4,7 @@ public class App {
   public static void main(String[] args) throws Exception {
     Flight f1 = new Flight(175);
     Flight f2 = new Flight(175);
+    // Passenger p1 = new Passenger();
 
     System.out.println(f1.equals(f2));
 
