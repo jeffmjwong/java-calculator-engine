@@ -1,11 +1,19 @@
 package app;
 
 public class CargoFlight extends Flight {
-  private int passengers;
-  private int seats = 12;
+  int passengers;
 
+  public CargoFlight(int flightNumber) {
+    super(flightNumber);
+  }
+
+  public CargoFlight(char flightClass) {
+    super(flightClass);
+  }
+
+  @Override
   public int getSeats() {
-    return this.seats;
+    return 12;
   }
 
   public int getPassengers() {
