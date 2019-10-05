@@ -13,12 +13,19 @@ public class Flight {
     this.flightClass = flightClass;
   }
 
-  // @Override
-  // public boolean equals(Object obj1) {
-  //   Flight obj2 = (Flight) obj1;
+  @Override
+  public boolean equals(Object obj1) {
+    if (super.equals(obj1)) {
+      return true;
+    }
 
-  //   return obj2.getFlightNumber() == this.flightNumber && obj2.getFlightClass() == this.flightClass;
-  // }
+    if (!(obj1 instanceof Flight)) {
+      return false;
+    }
+
+    Flight obj2 = (Flight) obj1;
+    return obj2.getFlightNumber() == this.flightNumber && obj2.getFlightClass() == this.flightClass;
+  }
 
   public int getFlightNumber() {
     return this.flightNumber;
