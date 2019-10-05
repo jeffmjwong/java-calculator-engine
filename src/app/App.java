@@ -2,15 +2,14 @@ package app;
 
 public class App {
   public static void main(String[] args) throws Exception {
-    Flight f1 = new Flight();
-    CargoFlight f2 = new CargoFlight();
+    Flight f1 = new Flight(175);
+    Flight f2 = new Flight(175);
 
-    System.out.println(f1.getSeats());
-    System.out.println(f2.getSeats());
+    System.out.println(f1.equals(f2));
 
-    System.out.println(f1.getPassengers());
-    f1.add1Passenger();
-    System.out.println(f1.getPassengers());
+    // System.out.println(f1.getPassengers());
+    // f1.add1Passenger();
+    // System.out.println(f1.getPassengers());
     // MathEquation[] equations = new MathEquation[4];
     // equations[0] = create(100.0d, 50.0d, 'd');
     // equations[1] = create(25.0d, 92.0d, 'a');
