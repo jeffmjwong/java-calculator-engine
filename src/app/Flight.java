@@ -1,11 +1,35 @@
 package app;
 
 public class Flight {
-  private int passengers;
-  private int seats = 150;
+  int passengers = 0;
+  private int flightNumber;
+  private int flightClass;
+
+  public Flight(int flightNumber) {
+    this.flightNumber = flightNumber;
+  }
+
+  public Flight(char flightClass) {
+    this.flightClass = flightClass;
+  }
+
+  // @Override
+  // public boolean equals(Object obj1) {
+  //   Flight obj2 = (Flight) obj1;
+
+  //   return obj2.getFlightNumber() == this.flightNumber && obj2.getFlightClass() == this.flightClass;
+  // }
+
+  public int getFlightNumber() {
+    return this.flightNumber;
+  }
+
+  public int getFlightClass() {
+    return this.flightClass;
+  }
 
   public int getSeats() {
-    return this.seats;
+    return 150;
   }
 
   public int getPassengers() {
@@ -21,7 +45,7 @@ public class Flight {
   }
 
   public boolean hasSeating() {
-    return passengers < seats;
+    return passengers < getSeats();
   }
 
   public void handleTooMany() {
