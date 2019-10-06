@@ -3,7 +3,9 @@ package app;
 public class CargoFlight extends Flight {
   int passengers;
   double usedCargoSpace = 0.0;
-  double maxCargoSpace = 100.0;
+  float maxCargoSpace = 1000.0f;
+
+  public CargoFlight() {}
 
   public CargoFlight(int flightNumber) {
     super(flightNumber);
@@ -11,6 +13,11 @@ public class CargoFlight extends Flight {
 
   public CargoFlight(char flightClass) {
     super(flightClass);
+  }
+
+  public CargoFlight(int flightNumber, float maxCargoSpace) {
+    this(flightNumber);
+    this.maxCargoSpace = maxCargoSpace;
   }
 
   @Override
