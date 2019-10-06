@@ -1,6 +1,6 @@
 package app;
 
-public class Pilot {
+public abstract class Pilot {
   private Flight currentFlight;
 
   public Flight getCurrentFlight() {
@@ -15,9 +15,7 @@ public class Pilot {
     }
   }
 
-  private boolean canAccept(Flight flight) {
-    return true;
-  }
+  public abstract boolean canAccept(Flight flight);
 
   private void handleCantAccept() {
     System.out.println("Can't accept the flight!");
