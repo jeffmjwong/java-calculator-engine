@@ -5,6 +5,8 @@ public class Flight {
   private int flightNumber;
   private int flightClass;
 
+  public Flight() {}
+
   public Flight(int flightNumber) {
     this.flightNumber = flightNumber;
   }
