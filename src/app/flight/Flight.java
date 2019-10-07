@@ -60,4 +60,13 @@ public class Flight {
   public void handleTooMany() {
     System.out.println("Flight is full!!");
   }
+
+  @Override
+  public String toString() {
+    if (this.getFlightNumber() > 0) {
+      return "Flight #" + this.getFlightNumber();
+    } else {
+      return "Flight Class " + this.getFlightClass();
+    }
+  }
 }
