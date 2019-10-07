@@ -13,10 +13,6 @@ public class App {
     // System.out.println(f1.equals(f2));
     // System.out.println(f1.equals(f3));
 
-    Adder a1 = new Adder(5.0, 6.0);
-    a1.calculate();
-    System.out.println(a1.getResult());
-
     // MathEquation[] equations = new MathEquation[4];
     // equations[0] = create(100.0d, 50.0d, 'd');
     // equations[1] = create(25.0d, 92.0d, 'a');
@@ -39,6 +35,22 @@ public class App {
 
     // System.out.print("result = ");
     // System.out.println(equationOverload.getResult());
+
+    System.out.println();
+    System.out.println("Using inheritance:");
+    System.out.println();
+
+    CalculateBase[] calculators = {
+      new Adder(25.0d, 92.0d),
+      new Subtracter(225.0d, 17.0d),
+      new Multiplier(11.0d, 3.0d),
+      new Divider(100.0d, 50.d)
+    };
+
+    for (CalculateBase calculator : calculators) {
+      calculator.calculate();
+      System.out.println(calculator.getResult());
+    }
   }
 
   public static MathEquation create(double leftVal, double rightVal, char opCode) {
