@@ -7,6 +7,7 @@ public class App {
   public static void main(String[] args) throws Exception {
     Flight f1 = new Flight(175);
     System.out.println("My flight is " + f1);
+
     // Flight f2 = new Flight(175);
     // CargoFlight f3 = new CargoFlight(500, 200.0f);
     // Passenger p1 = new Passenger();
