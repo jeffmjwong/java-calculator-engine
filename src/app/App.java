@@ -1,5 +1,8 @@
 package app;
 
+import app.flight.Flight;
+import app.flight.CargoFlight;
+
 public class App {
   public static void main(String[] args) throws Exception {
     Flight f1 = new Flight(175);
